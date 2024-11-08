@@ -5,8 +5,8 @@
 
     <StackLayout Padding="20,20">
         <Label Text="Race Results" FontSize="Large" FontAttributes="Bold"/>
-        <ListView />
-        <Picker x:Name="RacePicker" Title="Please pick a Race" ItemDisplayBinding="{Binding race_name}" HorizontalTextAlignment="Center" BackgroundColor="Silver"/>
+        <ListView x:Name = "lstResults" />
+        <Picker x:Name="RacePicker" Title="Please pick a Race" ItemDisplayBinding="{Binding race_name}" HorizontalTextAlignment="Center" BackgroundColor="Silver" SelectedIndexChanged="RacePicker_OnSelectedIndexChanged"/>
             
         <!--binding data with specific item-->
         
